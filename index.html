@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial card</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+      body{
+    margin: 50px; 
+    background-color: #f9f9f9;
+    justify-content: center;
+    padding-bottom: 0px;
+    overflow: hidden;
+ }   
+  .grid-container{
+    display: grid;
+    gap: 9px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    max-width: 900px;
+    margin: auto;
+    justify-content: center; 
+    border-radius: 90px;
+    
+}  
+  .card{
+    background-color: rgb(165, 250, 126);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow:  0 8px 20px rgba(0, 0, 0, 0.1); 
+}  
+  .daniel{
+    width: 500px;
+    height: 100px; 
+    
+} 
+ .jonathan{
+    width: 200px;
+    padding-left: 220px;
+    height: 4px;
+    
+} 
+ .jeanette{
+    padding-left: 9px; 
+    width: 270px;
+    padding-top: 150px; 
+    
+} 
+ .kira{
+    padding-left: 130px;
+    height: 40px;
+    width: 200px;
+    
+} 
+  .patrick{
+    width: 400px;
+    padding-right: 600px;
+    padding-top: 150px; 
+    padding-bottom: 500px;
+}  
+.card .header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+} 
+   .card img{ 
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+ .card p{
+    margin: 5px 0;
+    font-size: 14px;
+    color: rgb(245, 242, 242);
+} 
+.card h4{
+    margin: 0;
+    font-size: 13px;
+    color: white;
+}  
+ .card h3{
+    margin-top: 1rem; 
+    font-size: 17px;
+    color: rgb(233, 233, 238);
+    font-style: normal;
+}  
+  .card .quote{
+    font-style: normal;
+    color: hsl(219, 29%, 30%); 
+     height: 90px; 
+}   
+.purple{
+     background-color: rgb(124, 11, 236);
+     color: white;
+     background-image: url(bg-pattern-quotation.svg);
+     background-repeat: no-repeat; 
+     background-position: center top; 
+     
+} 
+  .purple .quote{
+    color: rgb(245, 238, 238);
+}  
+.grey{
+    background-color: hsl(219, 29%, 30%);
+    color: white;
+} 
+.grey .quote{
+    color: white;
+} 
+ .white{
+    background-color: rgb(247, 242, 242);  
+} 
+.white .quote{
+    color: rgb(22, 21, 21);
+    height: 100px;
+} 
+.dark{
+    background-color: rgb(31, 30, 30);
+} 
+ .dark .quote{
+    color: white;
+} 
+ .blue{
+    background-color: white;
+    color: white;
+    
+} 
+ .blue .quote{
+    color: rgb(22, 21, 21);
+    height: 330px;
+    font-size: 80%;
+} 
+ .blue .like{
+    color: black;
+} 
+ .blue .luv{
+    color: black;
+} 
+@media(max-width: 500px){
+    .grid-container{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        max-width: 200px;
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+    }
+    .card {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .daniel, .jonathan, .jeanette, .patrick, .kira {
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
+}
+</style> 
+
+</head>
+<body>
+   <main class="grid-container">
+    <!-- Daniel -->
+     
+     <div class="daniel">
+     <div class="card purple">
+        <div class="header">
+         <img src="assets/image-daniel.jpg" alt="Daniel"/> 
+         <div>
+        <h4>Daniel Clifford</h4>
+        <p>Verified Graduate</p>
+     </div>
+        </div>
+        <h3>I recieved a job offer mid-course,and the subjects i learned were current, if not more so, in the company i joined. i honestly feel i got every penny's worth</h3>
+        <p class="quote">"I was an EMT for many years before i joined the bootcamp. i've been looking to make a transition and have heard some people who had an amazing experience here.I signed up for the free intro course and found it incredibly fun!"</p>
+    </div>
+     </div>
+    <!-- Jonathan -->
+     <div class="jonathan">
+           <div class="grey card">
+        <div class="header">
+            <img src="assets/image-jonathan.jpg" alt="Jonathan"/>
+        <div>
+        <h4>Jonathan Walters</h4>
+        <p>Verified Graduate</p>
+     </div>
+        </div>
+        <h3>The team was very suppotive and kept me motivated</h3>
+        <p class="quote">I started as a total newbie with no coding skills. i now work as a mobile  engineer for a big company.This was one of the best investments i've made in myself</p>
+     </div>
+     </div>
+    
+    <!-- Kira -->
+     <div class="kira">
+     <div class="card blue">
+      <div class="header">
+        <img src="assets/image-kira.jpg" alt="image-kira"/>
+        <div>
+           <h4 style="color: black;">Kira Whittle</h4>
+          <p style="color: black;">Verified Graduate</p> 
+        </div>
+      </div>
+       <h3 class="like">Such a life-changing experience. highly recommended!</h3>
+      <p class="quote">“ Before joining the bootcamp, I had never written a line of code. I needed some structure from professionals who can help me learn programming step by step.i was encouraged to enroll by a former student of theirs whoncan only say wonderful things about the program. The entire curriculum and staff did not dissapoint. They were very hard-on and i never had to wait long for assistance.The agile team progect,in particular,was outstanding.it took my learning to the next level in a way that the tutorial could ever have.in fact,i've often referred to it during interviews as an example of my development experience.it certainly helped me land a job as a full-stack developer aftervrecieving multiple offers.100% recommended!”</p>
+     </div>
+     </div>
+      
+
+     <!-- Jeanette -->
+      <div class="jeanette">
+      <div class="white card">
+        <div class="header">
+            <img src="assets/image-jeanette.jpg" alt="image-jeanette"/>
+            <div>
+                <h4 style="color: black;">Jeanette Harmon</h4>
+                <p style="color: black;">Verified Graduate</p>
+            </div>
+        </div>
+        <h3 style="color: black;">An overall wonderful experience</h3>
+        <p class="quote">“ Thank you for the wonderful experience! I now have a job I really enjoy,and make a good living while doing something i love. ”</p>
+      </div>
+      </div>
+
+    <!-- Patrick -->
+     <div class="patrick">
+       <div class="card dark">
+      <div class="header">
+        <img src="assets/image-patrick.jpg" alt="image-patrick"/>
+        <div>
+           <h4>Patrick Abrams</h4>
+          <p>Verified Graduate</p> 
+        </div>
+      </div>
+      <h3>Awesome teaching support  from TAs who did the bootcamp themselves.</h3>
+      <p class="quote">“The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer.”</p>
+    </div>
+     </div>
+   </main>
+</body>
+</html>
